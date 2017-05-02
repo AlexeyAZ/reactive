@@ -1,0 +1,117 @@
+.sec5 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include media(w1024) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @include media(w768) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__content {
+        display: flex;
+
+        @include media(w1024) {
+            flex-direction: column;
+        }
+
+        @include media(w768) {
+            text-align: center;
+        }
+    }
+
+    &__content-item {
+
+        img {
+            width: 100%;
+        }
+
+        &_gallery {
+            width: 60%;
+        }
+
+        &_text {
+            padding-left: 30px;
+            width: 40%;
+
+            @include media(w1024) {
+                padding-left: 0;
+            }
+        }
+
+        @include media(w1024) {
+            width: 100%;
+        }
+    }
+
+    &__gallery {
+
+        @include media(w1024) {
+            margin-bottom: 20px;
+        }
+
+        .slick-arrow {
+            transition: $trans;
+            background-color: #1c8bce;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            border: none;
+            font-size: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 15px;
+            height: 40px;
+            width: 40px;
+            z-index: 2;
+
+            &:hover {
+                background-color: $light-blue;
+            }
+
+            &:before {
+                transition: $trans;
+                content: "";
+                display: inline-block;
+                border-top: 2px solid white;
+                border-right: 2px solid white;
+                height: 18px;
+                width: 18px;
+            }
+
+            &.slick-prev {
+                right: 65px;
+
+                &:before {
+                    transform: rotate(-135deg);
+                    margin-right: -5px;
+                }
+
+                @include media(w768) {
+                    right: auto;
+                    left: calc(50% - 50px);
+                }
+            }
+
+            &.slick-next {
+                right: 15px;
+
+                &:before {
+                    transform: rotate(45deg);
+                    margin-left: -5px;
+                }
+
+                @include media(w768) {
+                    right: calc(50% - 50px);
+                }
+            }
+        }
+    }
+}

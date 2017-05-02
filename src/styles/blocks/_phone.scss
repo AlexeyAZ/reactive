@@ -1,0 +1,20 @@
+.phone {
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+
+    &:hover {
+        color: $main-blue;
+    }
+
+    @include media(w1024) {
+        background-size: contain;
+        //font-size: 18px;
+    }
+
+    @include media(w768) {
+        font-size: 20px;
+    }
+}

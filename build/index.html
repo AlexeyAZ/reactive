@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Main</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-phone" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 — 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 — 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 — 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 — 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 — 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 — 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+        </form>
+      </div>
+    </div>
+    <section class="sec sec1">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__item"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt="">
+              <p class="color-blue italic header__logo-text mb0">Ваш фитнес-клуб вне конкуренции</p></a></div>
+          <div class="header__item header__item_right">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="">Обзор рынка</a><a class="header__nav-link" href="">Система EMS</a><a class="header__nav-link" href="">Состав франшизы</a><a class="header__nav-link" href="">Инвестиции</a></li>
+              </ul>
+            </nav>
+            <div class="header__contacts"><a class="header__link phone phone_white" href="tel:88006005030" data-phone="88006005030">8 800 600 50 30</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
+          </div>
+        </div>
+      </header>
+      <div class="container sec1__container">
+        <div class="sec1__form color-white">
+          <h2 class="semibold">Зарабатывайте 4 000 000 руб. в год</h2>
+          <p class="text text_m italic mb2">на 20-минутных EMS-тренировках</p>
+          <div class="sec1__form-links"><a class="btn-round js-small-btn sec1__form-btn" href="">Скачать презентацию</a><a class="sec1__form-link sec1__form-link_video" href="">Посмотреть видео</a></div>
+        </div><img class="sec1__img" src="img/sec1-man.png" alt="">
+      </div>
+    </section>
+    <section class="sec sec2">
+      <div class="sec2__item sec2__item_top">
+        <div class="container">
+          <div class="sec2__row">
+            <div class="sec2__col">
+              <h3 class="mb1">Спрос на короткие EMS-тренировки растет</h3>
+              <p class="text text_s mb2">Ежегодно рынок фитнес-услуг растёт примерно на 15%, а в 2017 году планируется его рост на 9,6 млрд. рублей</p>
+              <p class="text text_s mb2">Люди тратят на тренировки до 30 000 рублей в год, и всё чаще отдают редпочтения коротким и эффективным тренировкам</p>
+            </div>
+            <div class="sec2__col">
+              <p class="sec2__big-text">9,6 млрд</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec2__item sec2__item_bottom"><img class="sec2__bg" src="img/sec2-bg1.png" alt="">
+        <div class="sec2__item-container">
+          <div class="container sec2__bottom-container">
+            <div class="sec2__info">
+              <p class="text text_xxl">Система EMS-тренинга<br> помогает держать тело в тонусе </p>
+              <p class="text text_l italic mb1">без больших временных затрат</p>
+              <div class="sec2__list">
+                <div class="sec2__list-item">
+                  <div class="sec2__list-img-wrap"><img class="sec2__list-img" src="img/icon-timer.png" alt=""></div>
+                  <p class="text text_xs">Достаточно всего 20 минут тренировок в неделю</p>
+                </div>
+                <div class="sec2__list-item">
+                  <div class="sec2__list-img-wrap"><img class="sec2__list-img" src="img/icon-muscle.png" alt=""></div>
+                  <p class="text text_xs">Все мышцы прорабатываются за одну тренировку</p>
+                </div>
+              </div>
+            </div>
+          </div><img class="sec2__img" src="img/sec2-women.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="sec sec3">
+      <div class="container sec3__container">
+        <h3>Занятие спортом без больших<br> временных затрат</h3>
+        <p class="text text_m mb2">Фитнесс по системе EMS</p>
+        <div class="sec3__list">
+          <div class="sec3__list-item">
+            <div class="sec3__list-btn"><img src="img/icon-body.png" alt=""></div>
+            <p class="text text_xs mb0">Сжигает<br> лишний жир</p>
+          </div>
+          <div class="sec3__list-item">
+            <div class="sec3__list-btn"><img src="img/icon-muscle-arrow.png" alt=""></div>
+            <p class="text text_xs mb0">Увеличивает<br> мышечную массу</p>
+          </div>
+          <div class="sec3__list-item">
+            <div class="sec3__list-btn"><img src="img/icon-muscle-arrow.png" alt=""></div>
+            <p class="text text_xs mb0">Улучшает настроение<br> и самочувствие</p>
+          </div>
+          <div class="sec3__list-item">
+            <div class="sec3__list-btn"><img src="img/icon-heart.png" alt=""></div>
+            <p class="text text_xs mb0">Дарит красоту<br> и долголетие</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec3__img-container"><img class="sec3__img" src="img/sec3-women.png" alt=""><img class="sec3__img-decor" src="img/sec3-decor1.png" alt=""><img class="sec3__img-decor" src="img/sec3-decor2.png" alt=""><img class="sec3__img-decor" src="img/sec3-decor3.png" alt=""><img class="sec3__img-decor" src="img/sec3-decor4.png" alt=""></div>
+    </section>
+    <section class="sec sec4">
+      <div class="container sec4__container">
+        <p class="text text_xxl">Сейчас этот рынок<br> практически свободен</p>
+        <p class="text text_l italic mb1">и находится в ожидании сильных<br> федеральных компаний</p><a class="btn-round js-small-btn" href="">Узнать подробности о EMS</a>
+      </div><img class="sec4__img" src="img/sec4-map.png" alt="">
+    </section>
+    <section class="sec sec5">
+      <div class="container">
+        <h2 class="ta-center mb1">Станьте представителем<br> компании Re: Active</h2>
+        <div class="sec5__content">
+          <div class="sec5__content-item sec5__content-item_gallery">
+            <div class="sec5__gallery js-sec5-gallery">
+              <div class="sec5__gallery-item"><img src="img/sec5-bg.jpg" alt=""></div>
+              <div class="sec5__gallery-item"><img src="img/sec5-bg.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="sec5__content-item sec5__content-item_text">
+            <p class="text text_l italic">Зарабатывайте на EMS-тренировках <span class="bold">от 248 000 руб. в месяц</span></p>
+            <p class="text text_s light">Уже через 5 недель после начала сотрудничества вы откроете свой зал для высокотехнологичного фитнеса</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec6">
+      <div class="container"></div>
+    </section>
+    <section class="sec sec7">
+      <div class="container">
+        <div class="bottom-form-container" id="bottomFormContainer">
+          <form class="bottom-form" data-next="#bigForm" id="bottomForm">
+            <label class="bottom-form__label">
+              <input class="input input_city" type="text" name="city" placeholder="Ваш город" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input input_phone" type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input" type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <button class="btn-round bottom-form__btn">Проверить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__text footer__text_copy">© Пельмения, 2017<br> ресторан, моно-кухня</p>
+        <div class="footer__block"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика<br> конфиденциальности</a>
+          <div class="footer__social">
+            <p class="footer__social-title">Мы в социальных сетях</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+      </div>
+    </footer>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js"></script>
+  </body>
+</html>

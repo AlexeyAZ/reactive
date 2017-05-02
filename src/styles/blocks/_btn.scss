@@ -38,7 +38,7 @@ a {
     }
 
     @include media (w1024) {
-        height: 64px;
+        //height: 64px;
     }
 
     @include media (w768) {
@@ -57,17 +57,21 @@ a {
     }
 
     &_download {
-        background-image: url("../img/icon-download.svg");
-        background-position: right 35px center;
+        //background-image: url("../img/icon-download.svg");
+        //background-position: right 35px center;
         background-repeat: no-repeat;
         background-size: 50px;
-        padding-right: 100px;
+        //padding-right: 100px;
         position: relative;
 
         &:after {
+            transform: translateY(-50%);
             content: "PDF, 20Mb";
-            font-size: 30px;
+            color: #333333;
+            font-size: 19px;
+            font-weight: 400;
             position: absolute;
+            top: 50%;
             left: calc(100% + 20px);
             white-space: nowrap;
 
@@ -83,7 +87,7 @@ a {
         @include media (w768) {
             background-position: right 10px center;
             background-size: 30px;
-            padding-right: 50px;
+            //padding-right: 50px;
         }
     }
 

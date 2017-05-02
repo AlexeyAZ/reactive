@@ -1,0 +1,24 @@
+.sec9 {
+    background-image: url("../img/sec8-bg.jpg");
+	padding-top: 90px;
+	padding-bottom: 100px;
+
+	@include media(w1024) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	@include media(w768) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	&__border-text {
+		padding-bottom: 2.5em;
+		border-bottom: 2px solid white;
+
+		span {
+			border-bottom: 1px solid white;
+		}
+	}
+}

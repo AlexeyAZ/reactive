@@ -1,3 +1,88 @@
 .sec6 {
-    
+    background-image: url("../img/sec6-bg.jpg");
+	padding-top: 90px;
+	padding-bottom: 90px;
+
+	@include media(w1024) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	@include media(w768) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	&__wrap {
+		margin: 0 auto;
+		width: 90%;
+
+		@include media(w1024) {
+			width: 60%;
+		}
+
+		@include media(w768) {
+			width: 100%;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@include media(w1024) {
+			flex-direction: column;
+		}
+	}
+
+	&__list-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+		width: 48%;
+
+		@include media(w1024) {
+			width: 100%;
+		}
+
+		@include media(w768) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__list-img-wrap {
+		margin-right: 20px;
+	}
+
+	&__note {
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+
+		@include media(w768) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+
+		@include media(w1024) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__form-text {
+		margin-right: 30px;
+		width: 50%;
+
+		@include media(w1024) {
+			margin-right: 0;
+			margin-bottom: 20px;
+			width: auto;
+		}
+	}
 }

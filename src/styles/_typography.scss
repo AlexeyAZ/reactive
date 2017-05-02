@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 20px;
     }
 
+    &_sm {
+        font-size: 22px;
+    }
+
     &_m {
         font-size: 30px;
 
@@ -41,7 +45,11 @@ h1, h2, h3, h4, h5, h6, p {
     }
     
     &_xl {
-        font-size: 40px;
+        font-size: 37px;
+
+        @include media(w768) {
+            font-size: 27px;
+        }
     }
     
     &_xxl {

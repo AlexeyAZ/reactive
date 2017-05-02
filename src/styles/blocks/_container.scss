@@ -10,4 +10,9 @@
         padding-left: 18px;
         padding-right: 18px; 
     }
+
+    @include media(w768) {
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
 }

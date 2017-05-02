@@ -1,3 +1,20 @@
 section.sec.sec7
-    div.container
-        include bottom-form
+    div.container.sec7__container
+        p.text.text_xl.mb1.semibold.
+            Благодаря единому программному пространству работа вашей студии будет полностью автоматизирована
+        p.text.text_l.italic.sec7__border-text.mb1.
+            Минимум вмешательства – максимум результата!
+        div.sec7__form-container
+            p.text.text_l.italic.color-white.mb2.
+                Проверьте, свободен ли ваш город для сотрудничества?
+            form.sec7__form
+                label.sec7__form-label
+                    input(type="text" name="city" placeholder="Ваш город").input
+                label.sec7__form-label
+                    input(type="text" name="phone" placeholder="Телефон").input
+                label.sec7__form-label
+                    input(type="text" name="email" placeholder="E-mail").input
+                label.sec7__form-label
+                    a(href="").btn-round.js-small-btn.sec7__form-btn.
+                        Проверить
+        img(src="img/sec7-phone.png", alt="").sec7__img

@@ -1,0 +1,37 @@
+.modal {
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    z-index: 10;
+
+    &__block {
+        overflow: auto;
+        height: 100%;
+    }
+
+    &__container {
+        //background-color: white;
+        margin-top: 100px;
+        width: 90%;
+
+        @include media(w768) {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        iframe {
+            display: block;
+            height: 500px;
+            width: 100%;
+
+            @include media(w768) {
+                height: 300px;
+            }
+        }
+    }
+}

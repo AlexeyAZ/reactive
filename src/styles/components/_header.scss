@@ -1,7 +1,22 @@
 .header {
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
     background-color: $header-bg;
-    margin-bottom: 40px;
     padding: 16px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &_fixed {
+        transform: translateY(0);
+        position: fixed;
+        z-index: 100;
+    }
+
+    &_mobile {
+        transform: translateY(0);
+    }
 
     @include media(w1024) {
         margin-bottom: 0;

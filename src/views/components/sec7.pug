@@ -7,14 +7,14 @@ section.sec.sec7
         div.sec7__form-container
             p.text.text_l.italic.color-white.mb2.
                 Проверьте, свободен ли ваш город для сотрудничества?
-            form.sec7__form
+            form#openForm(data-next="#bigForm").sec7__form
                 label.sec7__form-label
-                    input(type="text" name="city" placeholder="Ваш город").input
+                    input(type="text" required="" name="city" placeholder="Ваш город").input
                 label.sec7__form-label
-                    input(type="text" name="phone" placeholder="Телефон").input
+                    input(type="text" required="" name="phone" placeholder="Телефон").input
                 label.sec7__form-label
-                    input(type="text" name="email" placeholder="E-mail").input
+                    input(type="text" required="" name="email" placeholder="E-mail").input
                 label.sec7__form-label
-                    a(href="").btn-round.js-small-btn.sec7__form-btn.
+                    button.btn-round.sec7__form-btn.
                         Проверить
         img(src="img/sec7-phone.png", alt="").sec7__img

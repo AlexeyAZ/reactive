@@ -11,6 +11,9 @@
   </head>
   <body>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="modal modal-video">
+      <div class="container modal__container"><iframe id="videoFrame" src="https://www.youtube.com/embed/i2TrGa3DLZY?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen></iframe></div>
+    </div>
     <div class="form-wrap form-wrap_small">
       <div class="form-container" id="smallFormContainer">
         <div class="form__close"></div>
@@ -19,7 +22,7 @@
           <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
           <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
           <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
-          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+          <button class="btn-round form__btn js-big-btn">Скачать</button>
         </form>
       </div>
     </div>
@@ -67,7 +70,7 @@
           <div class="header__item header__item_right">
             <nav class="header__nav">
               <ul class="header__nav-list">
-                <li class="header__nav-item"><a class="header__nav-link" href="">Обзор рынка</a><a class="header__nav-link" href="">Система EMS</a><a class="header__nav-link" href="">Состав франшизы</a><a class="header__nav-link" href="">Инвестиции</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#market">Обзор рынка</a><a class="header__nav-link" href="#ems">Система EMS</a><a class="header__nav-link" href="#franchise">Состав франшизы</a><a class="header__nav-link" href="#investments">Инвестиции</a></li>
               </ul>
             </nav>
             <div class="header__contacts"><a class="header__link phone phone_white" href="tel:88006005030" data-phone="88006005030">8 800 600 50 30</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
@@ -78,18 +81,18 @@
         <div class="sec1__form color-white">
           <h2 class="semibold">Зарабатывайте 4 000 000 руб. в год</h2>
           <p class="text text_m italic mb2">на 20-минутных EMS-тренировках</p>
-          <div class="sec1__form-links"><a class="btn-round js-small-btn sec1__form-btn" href="">Скачать презентацию</a><a class="sec1__form-link sec1__form-link_video" href="">Посмотреть видео</a></div>
+          <div class="sec1__form-links"><a class="btn-round js-small-btn sec1__form-btn" href="/">Скачать презентацию</a><a class="sec1__form-link sec1__form-link_video js-modal" href="/" data-modal="video">Посмотреть видео</a></div>
         </div><img class="sec1__img" src="img/sec1-man.png" alt="">
       </div>
     </section>
-    <section class="sec sec2">
+    <section class="sec sec2" id="market">
       <div class="sec2__item sec2__item_top">
         <div class="container">
           <div class="sec2__row">
             <div class="sec2__col">
               <h3 class="mb1">Спрос на короткие EMS-тренировки растет</h3>
-              <p class="text text_s mb2">Ежегодно рынок фитнес-услуг растёт примерно на 15%, а в 2017 году планируется его рост на 9,6 млрд. рублей</p>
-              <p class="text text_s mb2">Люди тратят на тренировки до 30 000 рублей в год, и всё чаще отдают редпочтения коротким и эффективным тренировкам</p>
+              <p class="text text_s mb2">Ежегодно рынок фитнес-услуг увеличивается примерно на 15%. В 2017 году он возрастет на 9,6 млрд. рублей</p>
+              <p class="text text_s mb2">Люди тратят на фитнес до 30 000 рублей в год, и всё чаще отдают предпочтения коротким и эффективным тренировкам</p>
             </div>
             <div class="sec2__col">
               <p class="sec2__big-text">9,6 млрд</p>
@@ -118,35 +121,34 @@
         </div>
       </div>
     </section>
-    <section class="sec sec3">
+    <section class="sec sec3" id="ems">
       <div class="container sec3__container">
-        <h3>Занятие спортом без больших<br> временных затрат</h3>
-        <p class="text text_m mb2">Фитнесс по системе EMS</p>
+        <h3 class="mb2">Фитнес по системе EMS</h3>
         <div class="sec3__list">
-          <div class="sec3__list-item">
+          <div class="sec3__list-item js-sec3-item">
             <div class="sec3__list-btn"><img src="img/icon-body.png" alt=""></div>
             <p class="text text_xs mb0">Сжигает<br> лишний жир</p>
           </div>
-          <div class="sec3__list-item">
+          <div class="sec3__list-item js-sec3-item">
             <div class="sec3__list-btn"><img src="img/icon-muscle-arrow.png" alt=""></div>
             <p class="text text_xs mb0">Увеличивает<br> мышечную массу</p>
           </div>
-          <div class="sec3__list-item">
-            <div class="sec3__list-btn"><img src="img/icon-muscle-arrow.png" alt=""></div>
+          <div class="sec3__list-item js-sec3-item">
+            <div class="sec3__list-btn"><img src="img/icon-plate.png" alt=""></div>
             <p class="text text_xs mb0">Улучшает настроение<br> и самочувствие</p>
           </div>
-          <div class="sec3__list-item">
+          <div class="sec3__list-item js-sec3-item">
             <div class="sec3__list-btn"><img src="img/icon-heart.png" alt=""></div>
             <p class="text text_xs mb0">Дарит красоту<br> и долголетие</p>
           </div>
         </div>
       </div>
-      <div class="sec3__img-container"><img class="sec3__img" src="img/sec3-women.png" alt=""><img class="sec3__img-decor" src="img/sec3-decor1.png" alt=""><img class="sec3__img-decor" src="img/sec3-decor2.png" alt=""><img class="sec3__img-decor" src="img/sec3-decor3.png" alt=""><img class="sec3__img-decor" src="img/sec3-decor4.png" alt=""></div>
+      <div class="sec3__img-container"><img class="sec3__img" src="img/sec3-women.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor1.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor2.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor3.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor4.png" alt=""></div>
     </section>
     <section class="sec sec4">
       <div class="container sec4__container">
-        <p class="text text_xxl">Сейчас этот рынок<br> практически свободен</p>
-        <p class="text text_l italic mb1">и находится в ожидании сильных<br> федеральных компаний</p><a class="btn-round js-small-btn" href="">Узнать подробности о EMS</a>
+        <p class="text text_xxl semibold">Сейчас этот рынок<br> практически свободен</p>
+        <p class="text text_l italic mb1">и находится в ожидании сильных<br> федеральных компаний</p><a class="btn-round js-small-btn" href="/">Узнать подробности о EMS</a>
       </div><img class="sec4__img" src="img/sec4-map.png" alt="">
     </section>
     <section class="sec sec5">
@@ -166,7 +168,7 @@
         </div>
       </div>
     </section>
-    <section class="sec sec6">
+    <section class="sec sec6" id="franchise">
       <div class="container">
         <h3 class="ta-center mb2">Вы получите всё, что потребуется для мощного старта:</h3>
         <div class="sec6__wrap">
@@ -193,7 +195,7 @@
             <p class="text text_s">Авторский программный комплекс для тренировок и немецкий тренажёр Miha Bodytech по специальной цене</p>
           </div>
           <div class="sec6__form">
-            <p class="text text_m italic sec6__form-text">Более детально пакет франшизы расписан в нашей презентации</p><a class="btn-round js-small-btn btn-round_download" href="">Скачать презентацию</a>
+            <p class="text text_m italic sec6__form-text">Более детально пакет франшизы расписан в нашей презентации</p><a class="btn-round js-small-btn btn-round_download" href="/">Скачать презентацию</a>
           </div>
         </div>
       </div>
@@ -204,22 +206,24 @@
         <p class="text text_l italic sec7__border-text mb1">Минимум вмешательства — максимум результата!</p>
         <div class="sec7__form-container">
           <p class="text text_l italic color-white mb2">Проверьте, свободен ли ваш город для сотрудничества?</p>
-          <form class="sec7__form">
+          <form class="sec7__form" id="openForm" data-next="#bigForm">
             <label class="sec7__form-label">
-              <input class="input" type="text" name="city" placeholder="Ваш город">
+              <input class="input" type="text" required="" name="city" placeholder="Ваш город">
             </label>
             <label class="sec7__form-label">
-              <input class="input" type="text" name="phone" placeholder="Телефон">
+              <input class="input" type="text" required="" name="phone" placeholder="Телефон">
             </label>
             <label class="sec7__form-label">
-              <input class="input" type="text" name="email" placeholder="E-mail">
+              <input class="input" type="text" required="" name="email" placeholder="E-mail">
             </label>
-            <label class="sec7__form-label"><a class="btn-round js-small-btn sec7__form-btn" href="">Проверить</a></label>
+            <label class="sec7__form-label">
+              <button class="btn-round sec7__form-btn">Проверить</button>
+            </label>
           </form>
         </div><img class="sec7__img" src="img/sec7-phone.png" alt="">
       </div>
     </section>
-    <section class="sec sec8">
+    <section class="sec sec8" id="investments">
       <div class="container sec8__container">
         <h3 class="ta-center sec8__title">Для масштабного запуска фитнес-студии вам потребуется</h3>
         <div class="sec8__list">
@@ -239,7 +243,7 @@
           </div>
         </div>
         <div class="sec8__form">
-          <p class="text text_l italic mb1">Все вложения окупятся уже после первого года работы!</p><a class="btn-round js-small-btn sec7__form-btn" href="">Получить расчет инвестиций</a>
+          <p class="text text_l italic mb1">Все вложения окупятся уже после первого года работы!</p><a class="btn-round js-small-btn sec7__form-btn" href="/">Получить расчет инвестиций</a>
         </div>
       </div><img class="sec8__img" src="img/sec7-man.jpg" alt="">
     </section>
@@ -269,18 +273,26 @@
     </section>
     <footer class="footer">
       <div class="container footer__container">
-        <p class="footer__text footer__text_copy">© Пельмения, 2017<br> ресторан, моно-кухня</p>
-        <div class="footer__block"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика<br> конфиденциальности</a>
-          <div class="footer__social">
-            <p class="footer__social-title">Мы в социальных сетях</p>
-            <ul class="footer__social-list">
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
-            </ul>
-          </div>
+        <div class="footer__item footer__item_copy">
+          <p class="footer__text">© 2016, Фитнес-клуб «Реактив»<br>Все права защищены</p>
         </div>
-        <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+        <div class="footer__item footer__item_about">
+          <p class="footer__text mb0">Узнайте больше о нас</p><a class="footer__text footer__link" href="http://reactive.fit/">reactive.fit</a>
+        </div>
+        <div class="footer__item footer__item_adress"><a class="footer__text footer__link" href="info@reactivefit.ru">info@reactivefit.ru</a>
+          <p class="footer__text mb0">Адрес: Черкесск, ул. Октябрьская 380 В </p>
+        </div>
+        <div class="footer__item footer__item_buttons"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+        <div class="footer__item footer__item_bottom">
+          <div class="footer__social">
+            <p class="footer__social-title mb0 footer__text">Мы в соц. сетях</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="" target="_blank"><i class="fa fa-vk"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="footer__social-item"><a class="footer__link footer__social-link" href="" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+            </ul>
+          </div><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer>
     <script src="scripts/vendor.js"></script>

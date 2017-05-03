@@ -1,10 +1,31 @@
 .thanks {
     background-image: url("../img/sec1-bg.jpg");
-    padding-top: 30px;
-    padding-bottom: 160px;
+    overflow: hidden;
+    padding-top: 120px;
 
     @include media(w1024) {
-        padding-bottom: 200px;
+        padding-top: 80px;
+    }
+
+    @include media(w768) {
+        padding-top: 80px;
+    }
+
+    &__container {
+
+        @include media(w768) {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__form {
+
+        @include media(w1024) {
+            text-align: center;
+            margin-right: 0 !important;
+            padding: 30px !important;
+            width: 100% !important;
+        }
     }
 
     &__heading {
@@ -49,15 +70,16 @@
         }
     }
 
-    &__buttons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 30px;
-        width: 100%;
+    &__links {
+
+        @include media(w1024) {
+            justify-content: space-between !important;
+            align-items: center !important;
+            flex-direction: row !important;
+        }
 
         @include media(w768) {
-            flex-direction: column;
+            flex-direction: column !important;
         }
     }
 
@@ -73,7 +95,18 @@
         }
     }
 
+    &__link {
+        background-image: url("../img/icon-back.png") !important;
+    }
+
     &__btn {
         justify-content: center;
+    }
+
+    &__img {
+
+        @include media(w1024) {
+            display: none !important;
+        }
     }
 }

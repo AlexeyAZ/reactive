@@ -2,11 +2,11 @@
     background-color: $main-dark-bg;
     overflow: hidden;
     padding-top: 90px;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
 
     @include media(w1024) {
         padding-top: 50px;
-        padding-bottom: 90px;
+        padding-bottom: 40px;
     }
 
     @include media(w768) {
@@ -38,6 +38,14 @@
             margin: 0 auto;
             position: static;
             width: 96%;
+        }
+    }
+
+    &__btn {
+        margin-bottom: 100px;
+
+        @include media(w768) {
+            margin-bottom: 2em;
         }
     }
 }

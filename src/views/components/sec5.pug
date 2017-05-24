@@ -5,10 +5,13 @@ section.sec.sec5
         div.sec5__content
             div.sec5__content-item.sec5__content-item_gallery
                 div.sec5__gallery.js-sec5-gallery
-                    div.sec5__gallery-item
-                        img(src="img/sec5-bg.jpg", alt="")
-                    div.sec5__gallery-item
-                        img(src="img/sec5-bg.jpg", alt="")
+                    - for (var i = 0; i <= 11; i++){
+                        div.sec5__gallery-item
+                            img(src="img/sec5-img" + i +".jpg", alt="")
+                    - }
+                    
+                    //- div.sec5__gallery-item
+                    //-     img(src="img/sec5-bg.jpg", alt="")
             div.sec5__content-item.sec5__content-item_text
                 p.text.text_l.italic.
                     Зарабатывайте на EMS-тренировках <span class="bold">от 248 000 руб. в месяц</span>

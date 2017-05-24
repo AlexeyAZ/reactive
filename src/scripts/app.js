@@ -212,14 +212,14 @@ $(function() {
                     }
                 }),
 
-                $.ajax({
-                    type: "POST",
-                    url: "php/sendwe.php",
-                    data: formData,
-                    success: function(data) {
+                // $.ajax({
+                //     type: "POST",
+                //     url: "php/sendwe.php",
+                //     data: formData,
+                //     success: function(data) {
                         
-                    }
-                })
+                //     }
+                // })
             );
             
 

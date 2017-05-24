@@ -82,6 +82,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .text_s {
   font-size: 20px; }
+  @media only screen and (max-width: 768px) {
+    .text_s {
+      font-size: 18px; } }
 
 .text_sm {
   font-size: 22px; }
@@ -3475,11 +3478,11 @@ a {
   background-color: #2e3237;
   overflow: hidden;
   padding-top: 90px;
-  padding-bottom: 120px; }
+  padding-bottom: 40px; }
   @media only screen and (max-width: 1024px) {
     .sec4 {
       padding-top: 50px;
-      padding-bottom: 90px; } }
+      padding-bottom: 40px; } }
   @media only screen and (max-width: 768px) {
     .sec4 {
       padding-top: 30px;
@@ -3503,6 +3506,11 @@ a {
         margin: 0 auto;
         position: static;
         width: 96%; } }
+  .sec4__btn {
+    margin-bottom: 100px; }
+    @media only screen and (max-width: 768px) {
+      .sec4__btn {
+        margin-bottom: 2em; } }
 
 .sec5 {
   padding-top: 80px;

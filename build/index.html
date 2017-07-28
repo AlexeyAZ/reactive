@@ -23,6 +23,11 @@
           <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
           <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
           <button class="btn-round form__btn js-big-btn">Скачать</button>
+          <label class="form__label form__label_security">
+            <input type="checkbox" checked required><span class="form__label-security-text">
+              Нажимая кнопку «Скачать», я даю согласие на обработку персональных данных и соглашаюсь с
+              <a href="doc/politic.pdf" target="_blank">политикой конфиденциальности</a></span>
+          </label>
         </form>
       </div>
     </div>
@@ -59,6 +64,11 @@
             </select>
           </label>
           <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+          <label class="form__label form__label_security">
+            <input type="checkbox" checked required><span class="form__label-security-text">
+              Нажимая кнопку «Получить предложение», я даю согласие на обработку персональных данных и соглашаюсь с
+              <a href="doc/politic.pdf" target="_blank">политикой конфиденциальности</a></span>
+          </label>
         </form>
       </div>
     </div>
@@ -85,7 +95,8 @@
           <h2 class="semibold">Зарабатывайте 4 000 000 руб. в год</h2>
           <p class="text text_m italic mb2">на 20-минутных персональных тренировках</p>
           <div class="sec1__form-links"><a class="btn-round js-small-btn sec1__form-btn" href="/">Скачать презентацию</a><a class="sec1__form-link sec1__form-link_video js-modal" href="/" data-modal="video">Посмотреть видео</a></div>
-        </div><img class="sec1__img" src="img/sec1-man.png" alt="">
+        </div>
+        <!--img(src="img/sec1-man.png", alt="").sec1__img-->
       </div>
     </section>
     <section class="sec sec2" id="market">
@@ -126,7 +137,7 @@
     </section>
     <section class="sec sec3" id="ems">
       <div class="container sec3__container">
-        <h3 class="mb2">Персональные EMS-тренировки</h3>
+        <h3 class="mb2 sec3__title">Персональные EMS-тренировки</h3>
         <div class="sec3__list">
           <div class="sec3__list-item js-sec3-item">
             <div class="sec3__list-btn"><img src="img/icon-body.png" alt=""></div>
@@ -146,7 +157,10 @@
           </div>
         </div>
       </div>
-      <div class="sec3__img-container"><img class="sec3__img" src="img/sec3-women.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor1.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor2.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor3.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor4.png" alt=""></div>
+      <div class="sec3__img-container">
+        <div class="sec3__imgs"><img class="sec3__img js-sec3-img" src="img/sec3-img1.png" alt=""><img class="sec3__img sec3__img_2 js-sec3-img" src="img/sec3-img2.png" alt=""><img class="sec3__img js-sec3-img" src="img/sec3-img3.png" alt=""><img class="sec3__img js-sec3-img" src="img/sec3-img4.png" alt=""><img class="sec3__logo" src="img/sec3-logo.png" alt=""></div>
+        <div class="sec3__decor"><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor1.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor2.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor3.png" alt=""><img class="sec3__img-decor js-sec3-decor" src="img/sec3-decor4.png" alt=""></div>
+      </div>
     </section>
     <section class="sec sec4">
       <div class="container sec4__container">
@@ -173,6 +187,9 @@
               <div class="sec5__gallery-item"><img src="img/sec5-img9.jpg" alt=""></div>
               <div class="sec5__gallery-item"><img src="img/sec5-img10.jpg" alt=""></div>
               <div class="sec5__gallery-item"><img src="img/sec5-img11.jpg" alt=""></div>
+              <div class="sec5__gallery-item"><img src="img/sec5-img12.jpg" alt=""></div>
+              <div class="sec5__gallery-item"><img src="img/sec5-img13.jpg" alt=""></div>
+              <div class="sec5__gallery-item"><img src="img/sec5-img14.jpg" alt=""></div>
             </div>
           </div>
           <div class="sec5__content-item sec5__content-item_text">
@@ -235,33 +252,39 @@
             <label class="sec7__form-label">
               <button class="btn-round sec7__form-btn">Проверить</button>
             </label>
+            <label class="form__label sec7__form-label-security">
+              <input type="checkbox" checked required><span class="form__label-security-text">
+                Нажимая кнопку «Проверить», я даю согласие на обработку персональных данных и соглашаюсь с
+                <a href="doc/politic.pdf" target="_blank">политикой конфиденциальности</a></span>
+            </label>
           </form>
         </div><img class="sec7__img" src="img/sec7-phone.png" alt="">
       </div>
     </section>
     <section class="sec sec8" id="investments">
       <div class="container sec8__container">
-        <h3 class="ta-center sec8__title">Для успешного старта студии персональных тренировок вам потребуется</h3>
+        <h2 class="ta-center sec8__title">Для успешного старта студии персональных тренировок вам потребуется</h2>
         <div class="sec8__list">
           <div class="sec8__list-item">
             <div class="sec8__list-img-wrap"><img class="sec8__list-img" src="img/icon-cup.png" alt=""></div>
             <div class="sec8__list-text">
               <p class="sec8__list-title bold">Всего 99 000 рублей</p>
-              <p class="text text_xs">на покупку франшизы</p>
+              <p class="text text_xs mb0">на покупку франшизы</p>
             </div>
           </div>
           <div class="sec8__list-item">
             <div class="sec8__list-img-wrap"><img class="sec8__list-img" src="img/icon-bricks.png" alt=""></div>
             <div class="sec8__list-text">
               <p class="sec8__list-title bold">От 2,5 млн рублей</p>
-              <p class="text text_xs">на ремонт помещения и оборудование</p>
+              <p class="text text_xs mb0">на ремонт помещения и оборудование</p>
             </div>
           </div>
         </div>
         <div class="sec8__form">
-          <p class="text text_l italic mb1">Все вложения окупятся уже после первого года работы!</p><a class="btn-round js-small-btn sec7__form-btn" href="/">Получить расчет инвестиций</a>
+          <p class="text text_l italic mb1">Все вложения окупятся уже после первого года работы!</p><a class="btn-round js-small-btn" href="/">Получить расчет инвестиций</a>
         </div>
-      </div><img class="sec8__img" src="img/sec7-man.jpg" alt="">
+      </div>
+      <!--img(src="img/sec7-man.jpg", alt="").sec8__img-->
     </section>
     <section class="sec sec9">
       <div class="container ta-center color-white">
@@ -282,6 +305,11 @@
             </label>
             <label class="bottom-form__label">
               <button class="btn-round bottom-form__btn">Проверить</button>
+            </label>
+            <label class="form__label sec7__form-label-security">
+              <input type="checkbox" checked required><span class="form__label-security-text">
+                Нажимая кнопку «Проверить», я даю согласие на обработку персональных данных и соглашаюсь с
+                <a href="doc/politic.pdf" target="_blank">политикой конфиденциальности</a></span>
             </label>
           </form>
         </div>

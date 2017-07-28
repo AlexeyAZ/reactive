@@ -38,12 +38,13 @@ $(function() {
 
     function sec3ListAnimate() {
         var decor = $(".js-sec3-decor");
+        var img = $(".js-sec3-img");
         var activeClass = "sec3__img-decor_show";
+        var activeImgClass = "sec3__img_show";
         var moveClass = "sec3__img-decor_move";
-        var oldIndex = 0;
-        var animationStart = false;
 
         decor.eq(0).addClass(activeClass);
+        img.eq(0).addClass(activeImgClass);
         $(".js-sec3-item").eq(0).addClass("sec3__list-item_active");
 
         $(".js-sec3-item").hover(function() {
@@ -51,50 +52,29 @@ $(function() {
             var self = $(this);
             var selfIndex = self.index();
             var hoverElem = decor.eq(selfIndex);
+            var hoverImgElem = img.eq(selfIndex);
 
             $(".sec3__list-item_active").removeClass("sec3__list-item_active");
             self.addClass("sec3__list-item_active");
             $("." + activeClass).removeClass(activeClass);
+            $("." + activeImgClass).removeClass(activeImgClass);
             hoverElem.addClass(activeClass);
-
-            // if (selfIndex != oldIndex && animationStart == false) {
-            //     animationStart = true;
-            //     decor.eq(selfIndex).css({
-            //         transform: "translateX(0)",
-            //     });
-
-            //     decor.eq(oldIndex).addClass(moveClass);
-            //     decor.eq(oldIndex).on("transitionend", function() {
-
-            //         decor.eq(oldIndex).removeClass(activeClass);
-            //         decor.eq(oldIndex).removeClass(moveClass);
-
-            //         $(this).off("transitionend");
-            //         animationStart = false;
-            //         oldIndex = selfIndex;
-            //     })
-                
-            //     decor.eq(selfIndex).addClass(activeClass);
-            //     decor.eq(selfIndex).attr("style", "");
-
-            //     console.log(oldIndex)
-            // }
-            
+            hoverImgElem.addClass(activeImgClass);
         },
         function() {
             var self = $(this);
             var selfIndex = self.index();
             var hoverElem = decor.eq(selfIndex);
-
         });
     }
+    sec3ListAnimate();
     
 
-    if (window.matchMedia("(max-width: 1024px)").matches) {
+    // if (window.matchMedia("(max-width: 1024px)").matches) {
         
-    } else {
-        sec3ListAnimate();
-    }
+    // } else {
+    //     sec3ListAnimate();
+    // }
     
 
     function phoneLink() {

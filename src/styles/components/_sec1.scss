@@ -2,6 +2,7 @@
     background-image: url("../img/sec1-bg.jpg");
     padding-top: 120px;
     overflow: hidden;
+    z-index: 3;
 
     @include media(w1024) {
         padding-top: 80px;
@@ -24,7 +25,7 @@
     }
 
     &__form {
-        background-color: $main-dark-bg;
+        background-color: rgba(15,20,25,0.92);//$main-dark-bg;
         padding: 60px 100px 90px 60px;
         width: 60%;
 
@@ -33,14 +34,13 @@
         }
 
         @include media(w1024) {
-            margin-right: 5%;
-            padding: 50px 50px 130px 90px;
+            margin: 0 auto;
+            padding: 50px 50px 90px 90px;
             width: 80%;
         }
 
         @include media(w768) {
-            margin-right: 0;
-            padding: 30px 15px 40%;
+            padding: 30px 15px 60px;
             width: 100%;
         }
     }
@@ -85,24 +85,24 @@
         }
     }
 
-    &__img {
-        position: absolute;
-        top: 0;
-        right: 55%;
-        height: 100%;
+    // &__img {
+    //     position: absolute;
+    //     top: 0;
+    //     right: 55%;
+    //     height: 100%;
 
-        @include media(w1024) {
-            top: 100px;
-            right: 50%;
-            height: auto;
-            max-width: 80%;
-        }
+    //     @include media(w1024) {
+    //         top: 100px;
+    //         right: 50%;
+    //         height: auto;
+    //         max-width: 80%;
+    //     }
 
-        @include media(w768) {
-            position: static;
-            margin: -30% auto;
-            max-width: none;
-            width: 110%;
-        }
-    }
+    //     @include media(w768) {
+    //         position: static;
+    //         margin: -30% auto;
+    //         max-width: none;
+    //         width: 110%;
+    //     }
+    // }
 }

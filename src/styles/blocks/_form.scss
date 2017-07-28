@@ -85,7 +85,7 @@ $form-input-padding: 25px;
     }
 
     &__heading {
-        font-size: 42px;
+        font-size: 30px;
         font-weight: bold;
         margin-bottom: 20px;
 
@@ -109,6 +109,13 @@ $form-input-padding: 25px;
         span {
             display: inline-block;
             margin-bottom: 4px;
+        }
+
+        &_security {
+
+            a {
+                display: inline;
+            }
         }
     }
 
@@ -138,6 +145,7 @@ $form-input-padding: 25px;
     }
 
     &__btn {
+        margin-bottom: 10px;
         position: relative;
         font-size: 22px;
         width: 100%;
@@ -167,5 +175,9 @@ $form-input-padding: 25px;
                 }
             }
         }
+    }
+
+    &__label-security-text {
+        display: inline !important;
     }
 }

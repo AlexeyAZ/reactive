@@ -9,6 +9,13 @@ div.form-wrap.form-wrap_small
             input(type="email" name="email" placeholder="Ваш email" required="").form__input
             button.btn-round.form__btn.js-big-btn.
                 Скачать
+            label.form__label.form__label_security
+                input(type="checkbox" checked required)
+                span.form__label-security-text
+                    |Нажимая кнопку "Скачать", я даю согласие на обработку персональных данных и соглашаюсь с
+                    |
+                    a(href="doc/politic.pdf" target="_blank").
+                        политикой конфиденциальности
 div.form-wrap.form-wrap_big
     div#bigFormContainer.form-container
         div.form__close
@@ -56,3 +63,10 @@ div.form-wrap.form-wrap_big
                         Более 3 000 000 рублей
             button.btn-round.form__btn.form__btn_center.
                 Получить предложение
+            label.form__label.form__label_security
+                input(type="checkbox" checked required)
+                span.form__label-security-text
+                    |Нажимая кнопку "Получить предложение", я даю согласие на обработку персональных данных и соглашаюсь с
+                    |
+                    a(href="doc/politic.pdf" target="_blank").
+                        политикой конфиденциальности

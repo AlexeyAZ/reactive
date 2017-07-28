@@ -19,6 +19,11 @@
         }
     }
 
+    &__title {
+        position: relative;
+        z-index: 1;
+    }
+
     &__list-item {
         cursor: default;
         display: flex;
@@ -60,24 +65,104 @@
         position: absolute;
         bottom: 0;
         left: 40%;
+        height: 100%;
+        width: 60%;
+
+        @include media(w1024) {
+            left: 50%;
+            width: 50%;
+        }
 
         @include media(w768) {
             position: static;
+            height: 450px;
+            width: auto;
+        }
+    }
+
+    &__imgs {
+        position: absolute;
+        top: 0;
+        bottom: -20px;
+        left: 0;
+        width: 50%;
+        z-index: 1;
+
+        @include media(w1024) {
+            width: 100%;
+        }
+
+        @include media(w768) {
+            margin: 0 auto;
+            position: relative;
+            top: auto;
+            bottom: auto;
+            left: auto;
+            height: 100%;
+            width: auto;
         }
     }
 
     &__img {
-        margin-bottom: -50px;
+        transform: translate3d(0,0,0);
+        transition: 0.4s;
+        display: block;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        max-height: 77%;
         max-width: 90%;
 
+        &_2 {
+            max-height: 74%;
+            max-width: none;
+        }
+
         @include media(w1024) {
-            max-width: 85%;
+
+            &_2 {
+                max-height: 77%;
+            }
         }
 
         @include media(w768) {
-            display: block;
-            margin: 0 auto;
-            max-width: 90%;
+            transform: translate3d(-50%,0,0);
+            left: 50%;
+            height: 100%;
+            max-height: none;
+            max-width: none;
+        }
+
+        &_show {
+            opacity: 1;
+        }
+    }
+
+    &__logo {
+        transform: translate(0%, 0);
+        position: absolute;
+        top: 30%;
+        left: 0;
+        max-width: 350px;
+        z-index: -1;
+
+        @include media(w768) {
+            transform: translate(-50%, 0);
+            top: 10%;
+            left: 50%;
+            max-width: 300px;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+
+        @include media(w1024) {
+            display: none;
         }
     }
 
@@ -89,7 +174,7 @@
         visibility: hidden;
         position: absolute;
         bottom: 0;
-        left: 80%;
+        right: 20%;
 
         @include media(w1024) {
             display: none;

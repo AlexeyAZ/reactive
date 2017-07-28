@@ -45,6 +45,7 @@
 
 	&__form {
 		display: flex;
+		flex-flow: wrap;
 		position: relative;
 
 		@include media(w1024) {
@@ -64,6 +65,22 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+	}
+
+	&__form-label-security {
+		color: white;
+		text-align: left;
+		margin-top: 20px;
+		width: 100%;
+
+		a {
+			color: white;
+			display: inline;
+		}
+
+		@include media(w768) {
+			margin-top: 0;
 		}
 	}
 
